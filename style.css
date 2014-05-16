@@ -1,0 +1,213 @@
+/* ----------------------------------------------------------
+Description: 
+Author: Eric Musser
+Author URI: http://www.mannastudio.com/
+------------------------------------------------------------- */
+
+@import url(''); 
+
+/* ----------------------------------------------------------
+
+Available fonts/weights:
+
+	Bariol (headings)
+	 thin = 100
+	 light = 200
+	 regular = 400
+	 bold = 600
+
+	Open Sans (copy)
+	 light + italic = 300
+	 normal + italic = 400
+	 bold = 700
+	 
+------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------
+
+Font size reference...
+	(default browser font is 16px, or .0625em per pixel)
+	font-size: .625em; 16x.625 = 10px
+	font-size: .6875em; 16x.6875 = 11px
+	font-size: .75em; 16x.75 = 12px
+	font-size: .875em; 16x.875 = 14px
+	font-size: .9375em; 16x.937 = 15px
+	font-size: 1em; 16x1 = 16px
+	font-size: 1.0625em; 16x1.0625 = 17px
+	font-size: 1.125em; 16x1.125 = 18px
+	font-size: 1.25em; 16x1.25 = 20px
+	font-size: 1.375em; 16x1.375 = 22px
+------------------------------------------------------------- */
+
+[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }
+[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }
+[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }
+[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"] { -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }
+
+*, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.clearfix:before, .clearfix:after, .group:before, group:after { content: " "; display: table; }
+.clearfix:after, group:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+
+/*	! normalize.css v3.0.1 | MIT License | git.io/normalize
+------------------------------------------------------------- */
+html { font-family:sans-serif; -ms-text-size-adjust:100%; -webkit-text-size-adjust:100%; }
+body { margin:0; }
+article,aside,details,figcaption,figure, footer,header, hgroup,main,nav,section,summary { display:block; }
+audio,canvas,progress,video { display:inline-block; vertical-align:baseline; }
+audio:not([controls]) { display:none; height:0; }
+[hidden],template { display:none; }
+a { background:transparent; }
+a:active,a:hover { outline:0; }
+abbr[title] { border-bottom:1px dotted; }
+b,strong { font-weight:700; }
+dfn { font-style:italic; }
+h1 { font-size:2em; margin:.67em 0; }
+mark { background:#ff0; color:#000; }
+small { font-size:80%; }
+sub,sup { font-size:75%; line-height:0; position:relative; vertical-align:baseline; }
+sup { top:-.5em; }
+sub { bottom:-.25em; }
+img { border:0; }
+svg:not(:root) { overflow:hidden; }
+figure { margin:1em 40px; }
+hr { -moz-box-sizing:content-box; box-sizing:content-box; height:0; }
+pre { overflow:auto; }
+code,kbd,pre,samp { font-family:monospace,monospace; font-size:1em; }
+button,input,optgroup,select,textarea { color:inherit; font:inherit; margin:0; }
+button { overflow:visible; }
+button,select { text-transform:none; }
+button,html input[type="button"], input[type="reset"],input[type="submit"] { -webkit-appearance:button; cursor:pointer; }
+button[disabled],html input[disabled] { cursor:default; }
+button::-moz-focus-inner,input::-moz-focus-inner { border:0; padding:0; }
+input { line-height:normal; }
+input[type="checkbox"],input[type="radio"] { box-sizing:border-box; padding:0; }
+input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button { height:auto; }
+input[type="search"] { -webkit-appearance:textfield; -moz-box-sizing:content-box; -webkit-box-sizing:content-box; box-sizing:content-box; }
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration { -webkit-appearance:none; }
+fieldset { border:1px solid silver; margin:0 2px; padding:.35em .625em .75em; }
+legend { border:0; padding:0; }
+textarea { overflow:auto; resize:vertical; }
+optgroup { font-weight:700; }
+table { border-collapse:collapse; border-spacing:0; }
+td,th { padding:0; }
+
+
+/* ----------------------------------------------------------
+	Set base font to 18px (font-size: 112.5%)
+
+	8px = .4444rem		18px = 1rem (base)	36px = 2rem
+	9px = .5rem			20px = 1.111rem		38px = 2.111rem
+	10px = .5556rem		22px = 1.222rem		40px = 2.222rem
+	11px = .6111rem		24px = 1.333rem
+	12px = .6667rem		26px = 1.444rem
+	13px = .7222rem		28px = 1.556rem
+	14px = .7778rem		30px = 1.667rem
+	15px = .8333rem		32px = 1.778rem
+	16px = .8889rem		34px = 1.889rem
+------------------------------------------------------------- */
+
+/* ----------------------------------------------------------
+	Set base font to 16px
+
+	8px = 0.5rem 		21px = 1.313rem 	34px = 2.125rem
+	9px = 0.5625rem 	22px = 1.375rem 	35px = 2.188rem
+	10px = 0.625rem 	23px = 1.438rem 	36px = 2.25rem
+	11px = 0.6875rem 	24px = 1.5rem 		37px = 2.313rem
+	12px = 0.75rem 		25px = 1.563rem 	38px = 2.375rem
+	13px = 0.8125rem 	26px = 1.625rem 	39px = 2.438rem
+	14px = 0.875rem 	27px = 1.688rem 	40px = 2.5rem
+	15px = 0.9375rem 	28px = 1.75rem 		45px = 2.813rem
+	16px = 1rem (base) 	29px = 1.813rem 	50px = 3.125rem
+	17px = 1.063rem 	30px = 1.875rem 	55px = 3.438rem
+	18px = 1.125rem 	31px = 1.938rem 	60px = 3.75rem
+	19px = 1.188rem 	32px = 2rem 		
+	20px = 1.25rem 		33px = 2.063rem 	
+------------------------------------------------------------- */
+
+html { font-size: 16px; } /* Everything from here on is rem or em */
+
+
+body {
+	color: #404040;
+	background: #301a10 url('') 50% 0;
+	font-family: Georgia, Times New Roman, Times, serif;
+	font-size: 1.125rem; /* 18px */
+	line-height: 1.625rem; /* 26px */
+	}
+
+::-moz-selection, ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+	}
+
+a  {
+	color: #484759; 
+	background: none;
+	-webkit-transition: all .3s ease-in-out;
+	   -moz-transition: all .3s ease-in-out;
+	   	-ms-transition: all .3s ease-in-out;
+	     -o-transition: all .3s ease-in-out;
+	        transition: all .3s ease-in-out;
+	}
+a:visited  {
+	color: #990000; 
+	background: none;
+	}
+a:hover  { 
+	color: #000;
+	background: none; 
+	}
+
+h1  { font-size: rem; }
+h2  { font-size: rem; }
+h3  { font-size: rem; }
+h4  { font-size: rem; }
+h5  { font-size: rem; }
+h6  { font-size: rem; }
+h1, h2, h3, h4, h5, h6  {
+	font-family: '', sans-serif;
+	line-height: rem;
+	}
+
+blockquote { } 
+
+
+/*	Layout
+-------------------------------------------------------------- */
+.wrapper { }
+.main-nav { }
+.main-nav a, .main-nav a:visited { }
+.main-nav a:hover { }
+
+.content { }
+.footer { }
+.footer a, .footer a:visited {
+	}
+.footer a:hover {
+	text-decoration: underline;
+	}	
+	
+
+/*  Retina (HiDPI) Display
+-------------------------------------------------------------- */
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 1.5), 
+	only screen and (   min--moz-device-pixel-ratio: 1.5),
+	only screen and (   -moz-min-device-pixel-ratio: 1.5), 
+	only screen and (     -o-min-device-pixel-ratio: 3/2), 
+	only screen and (        min-device-pixel-ratio: 1.5),
+	only screen and (                min-resolution: 144dpi),
+	only screen and (                min-resolution: 1.5dppx) {
+
+	#logo {
+		background: url('../images/logo-wt-400@2x.png') no-repeat;
+		width: 400px;
+		height: 120px;
+		margin: 0;
+		padding: 0;
+		}
+}
